@@ -13,7 +13,7 @@ class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
         final weather = Weather();
         emit(WeatherLoadedState(weather: weather));
       } catch (_) {
-        emit(const WeatherErrorState(message: 'Something went wrong'));
+        emit(const WeatherErrorState(message: 'Something went wrong!'));
       }
     });
   }
